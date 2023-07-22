@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="main.js" defer></script>
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+</head>
+<body>
+
+  <main>
+
+    <div class="fixed right-0 h-full top-0 w-[320px] mobile-menu z-10 bg-AlmostWhite text-[15px]">
+      <img src="/images/icon-close-menu.svg" alt="" class="ml-auto mr-5 mt-10 close-menu-icon">
+      <ul class="flex p-8 justify-start">
+        <li>
+          <div class="flex items-center gap-4">
+            <span>Features</span>
+            <img src="/images/icon-arrow-down.svg" alt="">
+          </div>
+          <ul class="ml-6 mt-7 flex flex-col gap-3">
+            <li>
+              <div class="flex items-center justify-start gap-4">
+                <img src="/images/icon-todo.svg" alt="">
+                <span>Todo List</span>
+              </div>
+            </li>
+            <li>
+              <div class="flex items-center justify-start gap-4">
+                <img src="/images/icon-calendar.svg" alt="">
+                <span>Calendar</span>
+              </div>
+            </li>
+            <li>
+              <div class="flex items-center justify-start gap-4">
+                <img src="/images/icon-reminders.svg" alt="">
+                <span>Reminders</span>
+              </div>
+            </li>
+            <li>
+              <div class="flex items-center justify-start gap-4">
+                <img src="/images/icon-planning.svg" alt="">
+                <span>Planning</span>
+              </div>
+            </li>
+        </li>
+        <li class="mt-2">
+          <div class="flex items-center gap-4 -ml-5">
+            <span>Company</span>
+            <img src="/images/icon-arrow-down.svg" alt="">
+          </div>
+          <ul class="ml-6 mt-7 flex flex-col gap-3">
+            <li>
+              <div class="flex items-center justify-start gap-4">
+                <span>History</span>
+              </div>
+            </li>
+            <li>
+              <div class="flex items-center justify-start gap-4">
+                <span>Our Team</span>
+              </div>
+            </li>
+            <li>
+              <div class="flex items-center justify-start gap-4">
+                <span>Blog</span>
+              </div>
+            </li>
+        </li>
+        <li class="-ml-9 mt-2">Careers</li>
+        <li class="-ml-9 mt-2">About</li>
+        
+      </ul>
+      <div class="flex flex-col items-center justify-center gap-4 mt-10">
+        <button>Login</button>
+        <button class="border-2 border-AlmostBlack rounded-xl px-20 py-2 hover:text-AlmostWhite hover:bg-AlmostBlack transition-all ease-in-out duration-500">Register</button>
+      </div>
+    </div>
+
+
+
+    
+    <header class="m-5 mt-10 lg:mx-16 lg:mt-8 flex justify-between">
+
+      <div class="flex items-end justify-center gap-20">
+        <img src="/images/logo.svg" alt="">
+        <ul class="flex items-start gap-8 hidden lg:flex text-MediumGray">
+          <li class="text-md relative">
+            <div class="flex items-center justify-center gap-4 link">
+              <span>Featuers</span>
+              <img src="/images/icon-arrow-down.svg" alt="" class="">
+            </div>
+            <ul class="absolute bg-AlmostWhite text-sm flex flex-col items-start gap-5 dropdown py-4 px-2 left-0">
+              <li>
+                <div class="flex items-center justify-center gap-2">
+                  <img src="/images/icon-todo.svg" alt="">
+                <span>Todo List</span>
+                </div>
+              </li>
+              <li>
+                <div class="flex items-center justify-center gap-2">
+                  <img src="/images/icon-calendar.svg" alt="">
+                <span>Calendar</span>
+                </div>
+              </li>
+              <li>
+                <div class="flex items-center justify-center gap-2">
+                  <img src="/images/icon-reminders.svg" alt="">
+                  <span>Reminders</span>
+                </div>
+              </li>
+              <li>
+                <div class="flex items-center justify-center gap-2">
+                  <img src="/images/icon-planning.svg" alt="">
+                  <span>Planning</span>
+                </div>
+              </li>
+            </ul>
+          </li>
+
+
+
+
+
+          <li class="text-md relative">
+            <div class="flex items-center justify-center gap-4 link">
+              <span>Company</span>
+              <img src="/images/icon-arrow-down.svg" alt="">
+            </div>
+            <ul class="absolute bg-AlmostWhite text-sm flex flex-col items-start gap-5 dropdown py-4 px-2 left-0">
+              <li>
+                <div class="flex items-center justify-center gap-2">
+                <span>History</span>
+                </div>
+              </li>
+              <li>
+                <div class="flex items-center justify-center gap-2">
+                <span>Our Team</span>
+                </div>
+              </li>
+              <li>
+                <div class="flex items-center justify-center gap-2">
+                  <span>Blog</span>
+                </div>
+              </li>
+            </ul>
+          </li>
+
+
+
+          <li class="text-md">
+            Careers
+          </li>
+          <li class="text-md">
+            About
+          </li>
+        </ul>
+      </div>
+
+
+
+
+
+      <div>
+        <div class="flex items-center justify-center gap-8 hidden lg:flex">
+          <button>Login</button>
+          <button class="border-2 border-AlmostBlack rounded-xl px-5 py-2 hover:text-AlmostWhite hover:bg-AlmostBlack transition-all ease-in-out duration-500">Register</button>
+        </div>
+        <img src="/images/icon-menu.svg" class="lg:hidden open-menu-icon">
+      </div>
+
+
+
+    </header>
+
+    
+    <section class="mt-10 pb-20 flex flex-col items-center justify-center lg:flex-row-reverse lg:max-w-[76.75rem] lg:mx-auto">
+      <div class="lg:flex-1">
+        <picture>
+          <source srcset="/images/image-hero-desktop.png" media="(min-width: 1024px)">
+          <img src="/images/image-hero-mobile.png" alt="" class="lg:w-[520px]">
+        </picture>
+      </div>
+
+
+      <div class="mt-9 flex flex-col justify-center items-start text-center gap-3 lg:gap-2 lg:flex-1 lg:self-stretch lg:mr-10"> 
+        <h1 class="font-bold text-3xl lg:text-6xl mx-auto">Make remote work</h1>
+        <p class="text-MediumGray w-[390px] mx-auto mt-2 lg:w-full lg:text-xl lg:text-left text-[15px]">Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+        <button class="text-AlmostWhite bg-AlmostBlack mx-auto px-6 py-3 rounded-2xl mt-2 lg:mx-0 hover:text-AlmostBlack hover:bg-transparent btn transition-all ease-in-out duration-500">Learn more</button>
+        <div class="flex items-center justify-center gap-6 mt-12">
+          <img src="/images/client-databiz.svg" alt="" class="w-20 lg:w-24">
+          <img src="/images/client-audiophile.svg" alt="" class="w-20 lg:w-24">
+          <img src="/images/client-meet.svg" alt="" class="w-20 lg:w-24">
+          <img src="/images/client-maker.svg" alt="" class="w-20 lg:w-24">
+        </div>
+      </div>
+    </section>
+
+
+
+  </main>
+</body>
+</html>
